@@ -47,5 +47,15 @@ describe('The form screen', () => {
         await formPage.chooseItemDropdown("Tanpa Biaya")
         await expect(formPage.dropdownText).toHaveTextContaining("Tanpa Biaya")
     })
+    it('Verify pop up shown with text when click Active button', async () => {
+        await formPage.buttonActive.click()
+        await formPage.alertPopup.waitForDisplayed(5000)
+        await expect(formPage.alertMessage).toHaveText("This button is active")
+        await formPage.okBtn.click()
+    })
+    it('Verify pop up not shown when click Inactive button', async () => {
+        await formPage.buttonInactive.click()
+        await expect(formPage.alertPopup).not.toBeDisplayed()
+    })
 
 });

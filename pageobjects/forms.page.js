@@ -7,6 +7,11 @@ class formPage {
     get dropdown() {return $("//*[@resource-id='android_touchable_wrapper']")}
     get listViewDialog() {return $("//*[contains(@resource-id,'select_dialog_listview')]")}
     get dropdownText() {return $("//*[@resource-id='android_touchable_wrapper']//android.widget.EditText")}
+    get buttonActive() {return $("~button-Active")}
+    get buttonInactive() {return $("~button-Inactive")}
+    get alertPopup() {return $("//*[contains(@resource-id,'parentPanel')]")}
+    get alertMessage() {return $("//*[contains(@resource-id,'message')]")}
+    get okBtn() {return $("//*[contains(@resource-id,'button1')]")}
 
     clickToggle(status){
         if (status.toUpperCase() == this.#getToggleText) {
