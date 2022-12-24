@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "wdio": "npx wdio config/wdio.android.conf.js",
+    "wdio-form": "npx wdio config/wdio.android.conf.js --spec ./test/specs/form.e2e.js",
+    "wdio-puzzle": "npx wdio config/wdio.android.conf.js --spec ./test/specs/puzzle.e2e.js"
   },
   "repository": {
     "type": "git",
@@ -23,7 +26,8 @@
   "dependencies": {
     "@wdio/cli": "^7.16.14",
     "appium": "^2.0.0-beta.46",
-    "dotenv": "^10.0.0"
+    "dotenv": "^10.0.0",
+    "wdio-timeline-reporter": "^5.1.4"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.0",
