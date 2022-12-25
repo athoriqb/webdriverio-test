@@ -15,7 +15,7 @@
 
     - `npm run wdio` to running all spec in one time
     - `npm run wdio-puzzle` to running spec puzzle e2e only
-    - `npm run wdio-form` to running spec for e2e only
+    - `npm run wdio-form` to running spec form e2e only
 
 
 - Report can be check in `.timeline` folder
