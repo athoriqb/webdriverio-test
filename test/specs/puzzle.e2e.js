@@ -1,7 +1,6 @@
-const puzzlePage = require('../../pageobjects/puzzle.page.js');
-const generalPage = require('../../pageobjects/general.page.js');
-const homePage = require('../../pageobjects/home.page.js');
-const { sleep } = require('wd/lib/commands.js');
+const puzzlePage = require('../pageobjects/puzzle.page.js');
+const generalPage = require('../pageobjects/general.page.js');
+const homePage = require('../pageobjects/home.page.js');
 
 describe('The puzzle drag and drop', () => {
     beforeAll('click puzzle', async () => {

@@ -1,6 +1,6 @@
-const homePage = require('../../pageobjects/home.page.js');
-const generalPage = require('../../pageobjects/general.page.js');
-const formPage = require('../../pageobjects/forms.page.js');
+const homePage = require('../pageobjects/home.page.js');
+const generalPage = require('../pageobjects/general.page.js');
+const formPage = require('../pageobjects/forms.page.js');
 
 describe('The form screen', () => {
     beforeAll('click forms', async () => {
