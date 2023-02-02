@@ -1,4 +1,4 @@
-# flip-home-test
+# Webdriverio
 
 ## Step by step how to run (Mac Only)
 - Install node 
